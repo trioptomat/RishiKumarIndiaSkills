@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_tv_lastName"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/facebook2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_tv_RegisterLogin"
+        app:layout_constraintStart_toStartOf="@+id/id_tv_SignUp"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_SignUp"
+        app:srcCompat="@drawable/download" />
+
+    <ImageView
+        android:id="@+id/google2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linkedin2"
+        app:layout_constraintStart_toEndOf="@+id/linkedin2"
+        app:layout_constraintTop_toTopOf="@+id/linkedin2"
+        app:srcCompat="@drawable/download__4_" />
+
+    <ImageView
+        android:id="@+id/linkedin2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_tv_toRegister"
+        app:layout_constraintStart_toEndOf="@+id/twiter2"
+        app:layout_constraintTop_toTopOf="@+id/twiter2"
+        app:srcCompat="@drawable/download__2_" />
+
+    <ImageView
+        android:id="@+id/twiter2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facebook2"
+        app:layout_constraintStart_toEndOf="@+id/facebook2"
+        app:layout_constraintTop_toTopOf="@+id/facebook2"
+        app:srcCompat="@drawable/download__3_" />
+
+    <TextView
+        android:id="@+id/id_tv_SignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background"
+        android:padding="15dp"
+        android:text="SignUp"
+        android:textAlignment="center"
+        android:textColor="#F8F8F8"
+        app:layout_constraintEnd_toEndOf="@+id/id_tv_RegPassword"
+        app:layout_constraintStart_toStartOf="@+id/id_tv_RegPassword"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_RegPassword" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0"
+        android:text="Create New Account"
+        android:textColor="@color/DarkBlue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/id_tv_firstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/tv_background"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="text"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_new"
+        app:layout_constraintTop_toBottomOf="@+id/tv_new" />
+
+    <EditText
+        android:id="@+id/id_tv_ReglastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/tv_background"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_new"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_firstName" />
+
+    <EditText
+        android:id="@+id/id_tv_date"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/tv_background"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_new"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_ReglastName" />
+
+    <EditText
+        android:id="@+id/id_tv_month"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/tv_background"
+        android:ems="10"
+        android:hint="Month"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/id_tv_year"
+        app:layout_constraintStart_toEndOf="@+id/id_tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_ReglastName" />
+
+    <EditText
+        android:id="@+id/id_tv_year"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/tv_background"
+        android:ems="10"
+        android:hint="Year"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_ReglastName" />
+
+    <EditText
+        android:id="@+id/id_tv_RegisterEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/tv_background"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_new"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_date" />
+
+    <EditText
+        android:id="@+id/id_tv_RegPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/tv_background"
+        android:ems="10"
+        android:hint="Passwod"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_new"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_RegisterEmail" />
+
+    <TextView
+        android:id="@+id/id_tv_RegisterLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Already Have Account ? Login"
+        android:textColor="@color/DarkBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        app:layout_constraintBottom_toTopOf="@+id/id_tv_RegisterLogin"
+        app:layout_constraintEnd_toEndOf="@+id/google2"
+        app:layout_constraintStart_toStartOf="@+id/facebook2"
+        app:layout_constraintTop_toBottomOf="@+id/linkedin2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

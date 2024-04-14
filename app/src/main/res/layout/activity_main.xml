@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/id_img_Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:alpha="0"
+        android:stateListAnimator="@android:anim/bounce_interpolator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_Hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0"
+        android:text="Hi Dear,"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_img_Logo" />
+
+    <TextView
+        android:id="@+id/tv_Welcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:text="Welcome Back!"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_Hi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Hi" />
+
+    <TextView
+        android:id="@+id/id_tv_ForgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/DarkBlue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/id_tv_LogPass"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_LogPass" />
+
+    <TextView
+        android:id="@+id/id_tv_Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/background"
+        android:padding="15dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#F8F8F8"
+        app:layout_constraintEnd_toEndOf="@+id/id_tv_ForgetPass"
+        app:layout_constraintStart_toStartOf="@+id/id_tv_LogPass"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_ForgetPass" />
+
+    <TextView
+        android:id="@+id/id_tv_toRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Here? SignUp"
+        android:textColor="@color/DarkBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/id_tv_Login"
+        app:layout_constraintStart_toStartOf="@+id/id_tv_Login"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_Login" />
+
+    <EditText
+        android:id="@+id/id_tv_logEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/tv_background"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_Welcom"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Welcom" />
+
+    <EditText
+        android:id="@+id/id_tv_LogPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/tv_background"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_Welcom"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_logEmail" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        app:layout_constraintBottom_toTopOf="@+id/id_tv_toRegister"
+        app:layout_constraintEnd_toEndOf="@+id/id_tv_Login"
+        app:layout_constraintStart_toStartOf="@+id/id_tv_Login"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv_Login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
